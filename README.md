@@ -1,36 +1,118 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do List
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-> _To-do list_ is a tool that helps users to organize their day. It lists the things that user need to do and allows to mark them as complete. This website is built using ES6 and Webpack!
+  <h3><b>Microverse README Template</b></h3>
 
-## Built With
+</div>
 
-- HTML
-- CSS
-- JavaScript
-- Webpack
+<!-- TABLE OF CONTENTS -->
 
-## Getting Started
+# 📗 Table of Contents
 
-To get a local copy, run the fllowing command.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-- `git clone https://github.com/smas0900/todo-list.git
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Todo List <a name="about-project"></a>
+
+This is a simple but useful project where user can add and remove his/her todo tasks. It maintains those tasks in the assending order. User can also mark and complete the completed tasks.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+     <li>Webpacks</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+<ul>
+<li>Add todo</li>
+<li>View all todo</li>
+<li>Remove completed todo.</li>
+</ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+Follow these steps to get a local copy of this web application.
 
 ### Prerequisites
 
-- node.js (10.13.0 (LTS))
-- git
+In order to run this project you need
+
+```sh
+  git
+  npm
+  node
+  Your favorite text editor
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+`git clone https://github.com/smas0900/todo-list.git
+```
 
 ### Install
 
-- `npm install`
+Install this dependencies:
+
+npm install
 
 ### Usage
 
-`npm start`
+To run this project:
 
-## Authors
+```sh
+  Open the live server
+```
+
+### Deployment
+
+You can deploy this project using:
+
+<a href='https://github.com/'>GitHub</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Alqama Saeed**
 
@@ -38,10 +120,45 @@ To get a local copy, run the fllowing command.
 - Twitter: [@AlqamaSaeed](https://twitter.com/AlqamaSaeed)
 - LinkedIn: [AlqamaSaeed](linkedin.com/in/alqama-saeed-598086120)
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- FUTURE FEATURES -->
 
-## 📝 License
+## 🔭 Future Features <a name="future-features"></a>
+- [ ] **Drag and drop functionality**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project then clone it, enhance it and do support me on my other social media networks. Thanks
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank microverse for accepting me in this faboulus bootcamp and provide me an opportunity to enhance my coding and communication skills.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
