@@ -1,6 +1,5 @@
 import './styles/main.css';
 
-
 const tasksArray = [
   {
     description: 'task 1',
@@ -18,7 +17,6 @@ const tasksArray = [
     index: 3,
   },
 ];
-
 
 const tasksContainer = document.querySelector('.list-container');
 const render = () => {
