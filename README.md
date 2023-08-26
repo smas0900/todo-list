@@ -56,9 +56,12 @@ This is a simple but useful project where user can add and remove his/her todo t
 ### Key Features <a name="key-features"></a>
 
 <ul>
-<li>Add todo</li>
-<li>View all todo</li>
-<li>Remove completed todo.</li>
+<li>Dynamic To-do Lists</li>
+<li>Interesting UI</li>
+<li>Add tasks and mark them as done.</li>
+<li>Delete tasks one by one or delete all marked done at one</li>
+<li>Reorder list by dragging and dropping tasks
+</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,6 +129,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] **Drag and drop functionality**
+- [ ] **Webpack template**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
