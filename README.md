@@ -11,6 +11,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -58,6 +59,16 @@ This is a simple but useful project where user can add and remove his/her todo t
 <li>Reorder list by dragging and dropping tasks
 </li>
 </ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link]((https://smas0900.github.io/todo-list/dist/))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
