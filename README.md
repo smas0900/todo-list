@@ -68,7 +68,7 @@ This is a simple but useful project where user can add and remove his/her todo t
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]((https://smas0900.github.io/todo-list/dist/))
+- [Live Demo Link](https://smas0900.github.io/todo-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
