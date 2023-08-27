@@ -1,32 +1,73 @@
-import './style.css';
-import { addListToLocalStorage, loadListFromLocalStorage } from './modules/localStorage.js';
-import { addToDo, toDoLi, clearAllTasks } from './modules/ui_handlers.js';
-import ToDoList from './modules/todolist.js';
+import './styles/main.css';
 
-const submitBtn = document.querySelector('.submit-btn');
-const clearAllBtn = document.querySelector('.clear-btn');
-const addToDoInput = document.querySelector('.add-todo');
+const tasksArray = [
+  {
+    description: 'task 1',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'task 2',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'task 3',
+    completed: false,
+    index: 3,
+  },
+];
 
-const toDoList = new ToDoList();
-const dataFromLocalStorage = loadListFromLocalStorage();
+const tasksContainer = document.querySelector('.list-container');
+const render = () => {
+  tasksArray.sort((a, b) => a.index - b.index);
+  tasksContainer.innerHTML = '';
+  for (let i = 0; i < tasksArray.length; i += 1) {
+    const html = `
+      <div class="task">
+        <input type="checkbox" class="checkbox-input">
+        <input type="text" class="text-input" value="${tasksArray[i].description}">
+        <div class="drag-to-order">&#x22EE;</div>
+      </div>
+      <hr>
+    `;
+    tasksContainer.innerHTML += html;
+  }
+};
 
-dataFromLocalStorage.forEach((toDoObject) => {
-  const pushedLocalTask = toDoList.addNewTask(
-    toDoObject.index, toDoObject.description, toDoObject.isCompleted,
-  );
-  addToDo(pushedLocalTask, toDoList, toDoLi);
-});
+window.onload = render;
 
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const inputValue = addToDoInput.value;
-  const pushedTask = toDoList.addNewTask(null, inputValue, false);
-  addToDoInput.value = '';
-  addToDo(pushedTask, toDoList, toDoLi);
-  addListToLocalStorage(toDoList.list);
-});
+const items = document.querySelectorAll('.task');
+let draggingItem = null;
 
-clearAllBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  clearAllTasks(toDoList, toDoLi);
+items.forEach((item) => {
+  item.addEventListener('dragstart', () => {
+    draggingItem = this;
+    this.classList.add('dragging');
+  });
+
+  item.addEventListener('dragend', () => {
+    draggingItem = null;
+    this.classList.remove('dragging');
+  });
+
+  item.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    this.classList.add('over');
+  });
+
+  item.addEventListener('dragleave', () => {
+    this.classList.remove('over');
+  });
+
+  item.addEventListener('drop', (e) => {
+    e.preventDefault();
+    this.classList.remove('over');
+    if (draggingItem) {
+      const checkbox = draggingItem.querySelector('.checkbox');
+      if (checkbox.checked) {
+        this.parentNode.insertBefore(draggingItem, this);
+      }
+    }
+  });
 });

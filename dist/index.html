@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
-  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" />
-  <title>To Do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
 <script defer src="main.js"></script></head>
-
 <body>
-  <section class="wrapper">
-    <header class="border-bottom">
-      <h1>To-do</h1>
-    </header>
-
-    <form class="border-bottom">
-      <input type="text" class="add-todo" placeholder="Add your list..." />
-      <button type="submit" class="submit-btn">
-        <i class="fa-solid fa-turn-down-left"></i>
-      </button>
-    </form>
-
-    <div class="todo-list">
-      <ul class="list"></ul>
-    </div>
-
-    <button type="button" class="clear-btn">Clear all completed</button>
-  </section>
+<div class="main">
+  <header>Today's To Do</header>
+  <hr>
+  <div class="add-list-container">
+    <input type="text" class="add-task" placeholder="Add to your new list...">
+    <div class="add-button">&#8617;</div>
+  </div>
+  <hr>
+  <div class="list-container">
+  </div>
+  <footer class="clear-all-completed">Clear all completed</footer>
+</div>
 </body>
-
 </html>
